@@ -1,0 +1,21 @@
+1. call bind apply
+2. setState
+3. React event binding 
+4. Css box model and Flexbox
+
+5. Closures
+6. new Function
+7. Closures drawbacks - variables are not garbage collected, memory snap of app is increased if closure is not handled properly
+
+8. ProtoTypes
+9. ProtoTypical inheritence
+
+Corrner  ardmen:
+Event loop - 
+Timer - 
+Closures - 
+Promises - 
+Inheritance - ProtoTypes
+this - Class and inheritence
+Fetch - async
+ES6 - map, reduce, filter, rest and spread
