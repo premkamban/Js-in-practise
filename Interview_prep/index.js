@@ -66,3 +66,10 @@ document.getElementById("hello").addEventListener('click', () => {
 });
 
 /* HOC */
+
+/*Task vs microtask :
+1) Task is least priority like timers, event handlers
+2) queue microtask
+3) one every event loop iteration a set of task is excuted from task queue but microtask is exceuted completley until the microtask queue is empty
+4) post empting the microtaskqueue task queue is cleared.
+*/
