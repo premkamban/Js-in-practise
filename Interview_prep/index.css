@@ -1,4 +1,4 @@
-h1 {
+h1, #counter {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,8 +6,10 @@ h1 {
 
 .cards {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {

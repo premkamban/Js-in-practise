@@ -19,3 +19,70 @@ Inheritance - ProtoTypes
 this - Class and inheritence
 Fetch - async
 ES6 - map, reduce, filter, rest and spread
+
+Usage of closures
+1) Modular design pattern
+2) Currying
+3) Functions like once
+4) Memoize
+5) maintaining state in async world
+6) setTimeouts
+7) Iterartors
+
+
+===================================================
+Microsoft Interview
+-------------------
+R1: 
+reverse a Linkedlist
+Flattening a array
+Design a image courosal
+
+R2:
+Expression evaluation
+Write a code in HTML, CSS, JS to form two list selection. And the user can perform several operations on these like:
+
+                  >> & <<(Move all from List1 A to List B ).
+
+                  > & < (Move only selected items)
+
+Up, Down to select the item
+
+
+R3:
+Snake ladder problem
+write code to insert an number 1-100 in spirall order
+
+R4:
+Reverse a Linkedlist
+
+
+Amazon SDE-2
+R1:
+Make an image carousel in vanilla JS
+
+R2:
+asked to make a 5 star rating component using JS, HTML and CSS
+
+R3:
+design a frontend system for a newspaper site’s home page.
+The design and components of the home page.
+How to make it mobile friendly? (Ans: PWA)
+How to make the rendering faster? (Ans: Use of caching, service workers)
+How to make it highly available in case of heavy load? (Ans: Use of multiple servers)
+Make sure you study about all the caching mechanisms and good system design practices. 
+Refer: https://www.youtube.com/watch?v=wXRr9fGCBRM
+
+R4:
+ Whatsapp’s last seen. Provided the date, it should show one of the following message- 
+
+last seen just now
+last seen a minute ago
+last seen an hour ago
+last seen a month ago
+last seen an year ago
+Other requirements – Udpate message dynamically according to the current time. After my implementation, we spent rest of the time optimizing it.
+
+
+R5:
+
