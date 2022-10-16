@@ -53,7 +53,7 @@ let a = 0;
 //         }
 //         outerCloure(i);
 //     }
-//     console.log("Timer started:"); 
+//     console.log("Timer started:");
 // }
 
 // x();
@@ -61,8 +61,8 @@ let a = 0;
 //Funtion statement aka Fun declaration
 
 let count = 0;
-document.getElementById("hello").addEventListener('click', () => {
-    document.getElementById('counter').innerHTML = ++count;
+document.getElementById("hello").addEventListener("click", () => {
+  document.getElementById("counter").innerHTML = ++count;
 });
 
 /* HOC */
@@ -73,3 +73,54 @@ document.getElementById("hello").addEventListener('click', () => {
 3) one every event loop iteration a set of task is excuted from task queue but microtask is exceuted completley until the microtask queue is empty
 4) post empting the microtaskqueue task queue is cleared.
 */
+let user = {
+  name: "prem",
+  age: 30,
+  something: () => {
+    console.log(this.name);
+  },
+};
+this.name = 5;
+
+//arrow function does not points to immediate parent it points to global this
+// arrow point to parent function
+
+// user.something();
+
+// const user1 = {
+//   firstname: "Premandnisha",
+//   getname() {
+//     const firstname = "easybuy";
+//     console.log(firstname);
+//     return this.firstname;
+//   },
+// };
+// console.log(user1.getname());
+
+class Outer {
+  constructor() {
+    this.unq = {
+      name: "prem",
+      getname: function () {
+        return this.name;
+      },
+    };
+  }
+  getname() {
+    return this.unq;
+  }
+}
+const obj = new Outer();
+console.log(obj.getname());
+
+/*
+*
+1)The prototype gives access to the prototype of function using function.
+
+Syntax: (function.prototype) 
+
+1.1 ) The prototype property is set to function when it is declared. All the functions have a prototype property
+
+2)proto gives access to the prototype of the function using the object.
+2.1) proto property that is set to an object when it is created using a new keyword. All objects behavior newly created have proto properties
+Syntax: (object.__proto__)*/
