@@ -1,0 +1,7 @@
+1) comment widget 
+2) Todo list app -  like JIRA board
+3) Food ordering app - sorting, sarchin, taging
+4) E-mail webapp
+5) Sudoku Game
+6) Snake game
+7) comparison app

@@ -1,3 +1,12 @@
+/*
+Machine coding round
+1) comment widget 
+2) Todo list app -  like JIRA board
+3) Food ordering app - sorting, sarchin, taging
+4) E-mail webapp
+5) Sudoku Game
+6) Snake game*/
+
 //1) Hoisting in let and const
 /*
 if let is not re-assigned or created like:
@@ -60,10 +69,10 @@ let a = 0;
 
 //Funtion statement aka Fun declaration
 
-let count = 0;
-document.getElementById("hello").addEventListener("click", () => {
-  document.getElementById("counter").innerHTML = ++count;
-});
+// let count = 0;
+// document.getElementById("hello").addEventListener("click", () => {
+//   document.getElementById("counter").innerHTML = ++count;
+// });
 
 /* HOC */
 
@@ -73,14 +82,14 @@ document.getElementById("hello").addEventListener("click", () => {
 3) one every event loop iteration a set of task is excuted from task queue but microtask is exceuted completley until the microtask queue is empty
 4) post empting the microtaskqueue task queue is cleared.
 */
-let user = {
-  name: "prem",
-  age: 30,
-  something: () => {
-    console.log(this.name);
-  },
-};
-this.name = 5;
+// let user = {
+//   name: "prem",
+//   age: 30,
+//   something: () => {
+//     console.log(this.name);
+//   },
+// };
+// this.name = 5;
 
 //arrow function does not points to immediate parent it points to global this
 // arrow point to parent function
@@ -88,7 +97,7 @@ this.name = 5;
 // user.something();
 
 // const user1 = {
-//   firstname: "Premandnisha",
+//   firstname: "Premand",
 //   getname() {
 //     const firstname = "easybuy";
 //     console.log(firstname);
@@ -97,21 +106,21 @@ this.name = 5;
 // };
 // console.log(user1.getname());
 
-class Outer {
-  constructor() {
-    this.unq = {
-      name: "prem",
-      getname: function () {
-        return this.name;
-      },
-    };
-  }
-  getname() {
-    return this.unq;
-  }
-}
-const obj = new Outer();
-console.log(obj.getname());
+// class Outer {
+//   constructor() {
+//     this.unq = {
+//       name: "prem",
+//       getname: function () {
+//         return this.name;
+//       },
+//     };
+//   }
+//   getname() {
+//     return this.unq;
+//   }
+// }
+// const obj = new Outer();
+// console.log(obj.getname());
 
 /*
 *
@@ -124,3 +133,55 @@ Syntax: (function.prototype)
 2)proto gives access to the prototype of the function using the object.
 2.1) proto property that is set to an object when it is created using a new keyword. All objects behavior newly created have proto properties
 Syntax: (object.__proto__)*/
+
+// function responseToUser(me) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve(`Subscribe to ${me}`);
+//     }, 2000);
+//   });
+// }
+
+// function responseToCommmunity(me) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve(`Subscribe to ${me}`);
+//     }, 2000);
+//   });
+// }
+
+// function responseToliker(me) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       reject(`Subscribe to ${me}`);
+//     }, 2000);
+//   });
+// }
+
+/*
+Promise.all([])
+Promise.race([])
+Promise.allSettled()  */
+
+// Promise.allSettled([
+//   responseToUser("User"),
+//   responseToCommmunity("Commnity"),
+//   responseToliker("Liker"),
+// ])
+//   .then((res) => {
+//     console.log(res);
+//   })
+//   .catch((err) => {
+//     console.log("Error: Promise failed", err);
+//   });
+
+function Show(time) {
+  console.log(`${this.nm} is from ${this.place} from ${time}`);
+}
+
+const obj = {
+  nm: "Prem",
+  place: "Chennai",
+};
+
+Show.call(obj, "today");

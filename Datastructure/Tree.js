@@ -12,18 +12,31 @@ class Bst {
   constructor() {
     this.root = null;
   }
+
   Insert(val) {
     var newNode = new Node(val);
     if (!this.root) {
       this.root = newNode;
+      return this;
     }
-    if (!this.root.value > val) {
-      if (this.root.right.val > val) {
-      } else {
+    var current = this.root;
+    while (true) {
+      if (current.value > val) {
+        if (current.left.val === null) {
+          current.left = newNode;
+          return this;
+        } else {
+          current = current.left;
+        }
+      } else if (current.value < val) {
+        if (current.right === null) {
+          current.right = newNode;
+          return this;
+        } else {
+          current = current.right;
+        }
       }
-    } else if (this.root.value < val) {
     }
-    return this;
   }
 
   Find(val) {
@@ -32,7 +45,9 @@ class Bst {
     var found = false;
     while (current && !found) {
       if (val < current.value) {
+        current = current.left;
       } else if (val > current.value) {
+        current = current.right;
       } else {
         found = true;
       }
@@ -40,3 +55,11 @@ class Bst {
     return current;
   }
 }
+
+/*Tree Traversal 
+
+BFS -
+DFS - Inorder preorder post order
+
+*/
+const bntree = new Bst();

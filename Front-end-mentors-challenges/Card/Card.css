@@ -1,0 +1,29 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5 rem;
+}
+
+.button {
+}
+
+.column-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.secondary-conatiner{
+    display: flex;
+    justify-content: center;
+    align-items: flex;
+}
